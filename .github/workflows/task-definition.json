@@ -2,7 +2,7 @@
   "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:779093773992:task-definition/demo-task-definition:1",
   "containerDefinitions": [
     {
-      "name": "demo",
+      "name": "cicd-ga-ecr-ecs-ec2",
       "image": "779093773992.dkr.ecr.ap-southeast-1.amazonaws.com/cicd-ga-ecr-ecs-ec2:9ff0f4f70d971d56dba4ce61b90cf7f5892d44a8",
       "cpu": 0,
       "portMappings": [
