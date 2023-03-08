@@ -7,11 +7,9 @@
       "cpu": 0,
       "portMappings": [
         {
-          "name": "demo-80-tcp",
           "containerPort": 80,
           "hostPort": 0,
-          "protocol": "tcp",
-          "appProtocol": "http"
+          "protocol": "tcp"
         }
       ],
       "essential": true,
@@ -40,10 +38,6 @@
   "requiresCompatibilities": ["EC2"],
   "cpu": "1024",
   "memory": "3072",
-  "runtimePlatform": {
-    "cpuArchitecture": "X86_64",
-    "operatingSystemFamily": "LINUX"
-  },
   "registeredAt": "2023-03-08T16:11:21.304Z",
   "registeredBy": "arn:aws:iam::779093773992:root",
   "tags": []
