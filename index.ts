@@ -16,6 +16,11 @@ async function main() {
     res.json("Health Check: Ok");
   });
 
+  app.get("/stop", (req, res) => {
+    res.send("Server is shutting down...");
+    process.exit(0);
+  });
+
   app.listen(3000, () => {
     console.log("App listening at port: " + 3000);
   });

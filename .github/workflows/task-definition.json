@@ -3,6 +3,12 @@
   "executionRoleArn": "arn:aws:iam::779093773992:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
+      "preStop": {
+        "path": "/stop",
+        "port": "3000",
+        "httpMethod": "GET",
+        "timeoutSeconds": 10
+      },
       "stopTimeout": 30,
       "dnsSearchDomains": null,
       "environmentFiles": null,
