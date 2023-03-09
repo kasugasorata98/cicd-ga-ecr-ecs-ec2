@@ -3,6 +3,9 @@
   "executionRoleArn": "arn:aws:iam::779093773992:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
+      "stopTimeout": 30,
+      "stopSignal": "SIGTERM",
+      "command": ["npm", "stop"],
       "dnsSearchDomains": null,
       "environmentFiles": null,
       "logConfiguration": {
@@ -22,7 +25,6 @@
           "containerPort": 3000
         }
       ],
-      "command": [],
       "linuxParameters": null,
       "cpu": 0,
       "environment": [],
@@ -36,7 +38,6 @@
       "memory": 128,
       "memoryReservation": null,
       "volumesFrom": [],
-      "stopTimeout": null,
       "image": "779093773992.dkr.ecr.ap-southeast-1.amazonaws.com/cicd-ga-ecr-ecs-ec2:15a49e9870bcc9bbf2b8cfb2f547a5ba649a0d5d",
       "startTimeout": null,
       "firelensConfiguration": null,
