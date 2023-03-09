@@ -1,7 +1,7 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::779093773992:role/ecsTaskExecutionRole",
   "minHealthyPercent": 50,
+  "executionRoleArn": "arn:aws:iam::779093773992:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "cicd-ga-ecr-ecs-ec2",
