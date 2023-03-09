@@ -21,7 +21,7 @@ async function main() {
     process.exit(0);
   });
 
-  app.listen(3000, () => {
+  app.listen(3001, () => {
     console.log("App listening at port: " + 3000);
   });
 }
