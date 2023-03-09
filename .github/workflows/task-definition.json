@@ -4,7 +4,6 @@
   "containerDefinitions": [
     {
       "stopTimeout": 30,
-      "command": ["npm", "stop"],
       "dnsSearchDomains": null,
       "environmentFiles": null,
       "logConfiguration": {

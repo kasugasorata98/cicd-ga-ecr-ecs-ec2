@@ -21,4 +21,10 @@ async function main() {
   });
 }
 
+process.on("SIGTERM", () => {
+  console.log("Received SIGTERM signal, shutting down...");
+  // Perform any necessary cleanup tasks here
+  process.exit(0);
+});
+
 main();
