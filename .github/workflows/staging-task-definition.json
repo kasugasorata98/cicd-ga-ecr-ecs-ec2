@@ -1,5 +1,6 @@
 {
   "ipcMode": null,
+  "minHealthyPercent": 50,
   "executionRoleArn": "arn:aws:iam::779093773992:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
