@@ -10,7 +10,5 @@ COPY . .
 
 EXPOSE 3000
 
-RUN tsc
-
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
 

@@ -1,9 +1,11 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
+import { test } from "./src";
 
 const app = express();
 
 async function main() {
+  test();
   app.use(cors());
   app.use(express.json());
   app.use(
